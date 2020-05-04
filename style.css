@@ -342,4 +342,14 @@ div.platformy img {
           align-items: center;
   height: 150px;
 }
+
+#introduction {
+  background: #f6d85e;
+  background-size: contain;
+}
+
+#introduction .character img {
+  width: 50%;
+  height: auto;
+}
 /*# sourceMappingURL=style.css.map */

@@ -214,3 +214,17 @@ div.platformy img {
     height: 150px;
 }
 
+#introduction {
+    background: $accent1;
+    background-size: contain;
+
+}
+#introduction .character {
+
+
+    img {
+      width: 50%;  
+      height: auto;  
+    }
+}
+
