@@ -77,11 +77,15 @@ a {
   color: #950000;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .characters-flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 100%;
   margin: 0 auto 3%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;

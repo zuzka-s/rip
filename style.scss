@@ -88,9 +88,13 @@ a {
     color: $accent2;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .characters-flex-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 0 auto 3%;
     flex-direction: row;
     justify-content: space-around;
