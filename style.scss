@@ -310,7 +310,7 @@ div.platformy img {
     text-align: right;
 }
 .nav-bg {
-    background: black;
+    /*background: $accent1;*/
     color: white;
 
     .logo img {
@@ -320,14 +320,14 @@ div.platformy img {
     }
 }
     .navbar-light .navbar-nav .nav-link {
-        color: white;
+        color: black;
     }
     .navbar-light .navbar-nav .nav-link:hover, .nav-item:hover .nav-link {
-        color: black;
+        color: white;
     }
 .nav-item {
     display: block;
-    background-color: #141414;
+        background-color: $accent1;
     width: max-content;
     width: -moz-max-content;
     width: -webkit-max-content;
@@ -336,11 +336,12 @@ div.platformy img {
     padding: 0px 25px;
     -webkit-transform: skew(-12deg, 0deg);
     transform: skew(-12deg, 0deg);
+
 }
 .nav-item:hover {
-    background-color: $accent1;
+    background-color: #141414;
 }    
-#introduction {
+.herobg {
     background: $accent1 url(images/bg.png) no-repeat;
     background-position: center center;
     background-size: cover;
@@ -372,6 +373,10 @@ div.platformy img {
 #hlavni-postavy {
    background-color: $accent3;
     color: white; 
+
+    h3 {
+        color: white;
+    }
 }
 #kde-kapitan-pomaha {
    background-color: $accent1; 

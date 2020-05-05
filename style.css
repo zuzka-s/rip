@@ -467,7 +467,7 @@ div.platformy img {
 }
 
 .nav-bg {
-  background: black;
+  /*background: $accent1;*/
   color: white;
 }
 
@@ -478,16 +478,16 @@ div.platformy img {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: white;
+  color: black;
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .nav-item:hover .nav-link {
-  color: black;
+  color: white;
 }
 
 .nav-item {
   display: block;
-  background-color: #141414;
+  background-color: #eaba23;
   width: max-content;
   width: -moz-max-content;
   width: -webkit-max-content;
@@ -499,10 +499,10 @@ div.platformy img {
 }
 
 .nav-item:hover {
-  background-color: #eaba23;
+  background-color: #141414;
 }
 
-#introduction {
+.herobg {
   background: #eaba23 url(images/bg.png) no-repeat;
   background-position: center center;
   background-size: cover;
@@ -543,6 +543,10 @@ div.platformy img {
 
 #hlavni-postavy {
   background-color: #000000;
+  color: white;
+}
+
+#hlavni-postavy h3 {
   color: white;
 }
 
