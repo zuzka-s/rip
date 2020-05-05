@@ -356,19 +356,19 @@ div.mobil {
 
 @media screen and (max-width: 1199px) {
   div.mobil {
-    margin-bottom: -107px;
+    margin-bottom: -66px;
   }
 }
 
 @media screen and (max-width: 991.5px) {
   div.mobil {
-    margin-bottom: -134px;
+    margin-bottom: -92px;
   }
 }
 
 @media screen and (max-width: 767px) {
   div.mobil {
-    margin-bottom: -132px;
+    margin-bottom: -150px;
   }
 }
 
