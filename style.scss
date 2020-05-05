@@ -67,7 +67,7 @@ h6 {
     line-height: 0.6;
 }
 
-.h-style {
+/*.h-style {
     display: block;
    background-color: $accent1;
    width: max-content;
@@ -82,8 +82,24 @@ h6 {
     -ms-transform: skew(-12deg, 0deg);
     transform: skew(-12deg, 0deg);
     height: 23px;
+}*/
+.h-style {
+    background: url('images/splash1.svg') no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+        text-align: center;
+   margin: 8% auto 3%;
+   padding: 0px 25px;
+    height: 130px;
+    font-style: italic;
+    h2 {
+        color:$accent1; 
+        margin-top: -20px;
+    }
 }
-
 a {
     color: $accent2;
 }
