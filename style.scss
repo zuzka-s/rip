@@ -1,4 +1,4 @@
-$accent1: #f6d85e;
+$accent1: #eaba23;
 $accent2: #950000;
 
 /*
@@ -211,7 +211,7 @@ div.platformy img {
 }
 
 #footer {
-    background-color: #3C3C3C;
+    background-color: #000;
     color: #fff;
     padding-bottom: 0;
 }
@@ -220,15 +220,28 @@ div.platformy img {
     background: url(images/m.svg) bottom left no-repeat;
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     height: 150px;
+    text-align: right;
 }
+.nav-bg {
+    background: black;
+    color: white;
 
+    .logo img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+}
+    .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:hover {
+        color: white;
+    }
 #introduction {
-    background: $accent1;
+    background: $accent1 url(images/bg.png) no-repeat;
+    background-position: center center;
     background-size: contain;
-
 }
 #introduction .character {
 

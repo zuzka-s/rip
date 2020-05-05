@@ -50,7 +50,7 @@ h5,
 h6 {
   text-transform: uppercase;
   text-align: center;
-  color: #f6d85e;
+  color: #eaba23;
   font-family: acumin-pro, sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -331,7 +331,7 @@ div.platformy img {
 }
 
 #footer {
-  background-color: #3C3C3C;
+  background-color: #000;
   color: #fff;
   padding-bottom: 0;
 }
@@ -343,17 +343,34 @@ div.platformy img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 150px;
+  text-align: right;
+}
+
+.nav-bg {
+  background: black;
+  color: white;
+}
+
+.nav-bg .logo img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:hover {
+  color: white;
 }
 
 #introduction {
-  background: #f6d85e;
+  background: #eaba23 url(images/bg.png) no-repeat;
+  background-position: center center;
   background-size: contain;
 }
 
