@@ -420,18 +420,63 @@ div.platformy img {
   height: auto;
 }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link {
   color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: black;
 }
 
 #introduction {
   background: #eaba23 url(images/bg.png) no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
 }
 
 #introduction .character img {
   width: 50%;
   height: auto;
+}
+
+.hero-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.hero-right h2 {
+  font-style: italic;
+}
+
+.hero-right .new-episodes-claim {
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 20px 0 10px 0;
+}
+
+.nav-item {
+  display: block;
+  background-color: #141414;
+  width: max-content;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: -o-max-content;
+  margin: 0 auto  0 5px;
+  padding: 0px 25px;
+  -webkit-transform: skew(-12deg, 0deg);
+  transform: skew(-12deg, 0deg);
+}
+
+.nav-item:hover {
+  background-color: #eaba23;
 }
 /*# sourceMappingURL=style.css.map */
