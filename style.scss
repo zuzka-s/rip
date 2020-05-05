@@ -73,8 +73,8 @@ h6 {
    width: max-content;
    width: -moz-max-content;
    width: -webkit-max-content;
-   width: -o-max-content
-   margin: 3% auto;
+   width: -o-max-content;
+   margin: 8% auto 3%;
    padding: 0px 25px;
    -moz-transform: skew(-12deg, 0deg);
     -webkit-transform: skew(-12deg, 0deg);
@@ -87,6 +87,26 @@ h6 {
 a {
     color: $accent2;
 }
+
+.characters-flex-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto 3%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.characters-flex {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3%;
+}
+
+
 
 /* Embed */
 .em-cont {
