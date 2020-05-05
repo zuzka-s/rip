@@ -169,6 +169,10 @@ a {
   margin: 0 3%;
 }
 
+.characters-flex img {
+  width: 100%;
+}
+
 /* Embed */
 .em-cont {
   max-width: 800px;
