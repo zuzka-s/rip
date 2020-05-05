@@ -1,5 +1,6 @@
 $accent1: #eaba23;
 $accent2: #950000;
+$accent3: #000000;
 
 /*
 Acumin Pro Bold
@@ -56,16 +57,60 @@ h5,
 h6 {
     text-transform: uppercase;
     text-align: center;
-    color: $accent1;
+    color: $accent3;
     font-family: acumin-pro, sans-serif;
     font-weight: 700;
-    font-style: italic;
 
+}
+
+.h-style h2 {
+    line-height: 0.6;
+}
+
+.h-style {
+    display: block;
+   background-color: $accent1;
+   width: max-content;
+   width: -moz-max-content;
+   width: -webkit-max-content;
+   width: -o-max-content;
+   margin: 8% auto 3%;
+   padding: 0px 25px;
+   -moz-transform: skew(-12deg, 0deg);
+    -webkit-transform: skew(-12deg, 0deg);
+    -o-transform: skew(-12deg, 0deg);
+    -ms-transform: skew(-12deg, 0deg);
+    transform: skew(-12deg, 0deg);
+    height: 23px;
 }
 
 a {
     color: $accent2;
 }
+
+.italic {
+    font-style: italic;
+}
+
+.characters-flex-container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto 3%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.characters-flex {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3%;
+}
+
+
 
 /* Embed */
 .em-cont {
