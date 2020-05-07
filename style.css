@@ -40,6 +40,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.1rem;
 }
 
 h1,
@@ -97,13 +98,26 @@ h6 {
   text-align: center;
   margin: 10px 0 40px 5px;
   padding: 0px 25px;
-  height: 130px;
+  height: 140px;
   font-style: italic;
 }
 
 .h-style h2 {
   color: #eaba23;
   margin-top: -20px;
+}
+
+#hlavni-postavy .h-style {
+  padding-right: 60px;
+}
+
+#kde-kapitan-pomaha .h-style {
+  height: 170px;
+  padding-right: 80px;
+}
+
+#kde-kapitan-pomaha .h-style h2 {
+  margin-top: -40px;
 }
 
 .h-style.splash2 {
@@ -118,6 +132,14 @@ h6 {
   background-image: url("images/splash2-white.svg");
 }
 
+.h-style.splash2.splashred {
+  background-image: url("images/splash2-red.svg");
+}
+
+.h-style.splash2.splashred h2 {
+  color: #FFF;
+}
+
 .h-style.splash3 {
   background-image: url("images/splash3.svg");
 }
@@ -128,6 +150,14 @@ h6 {
 
 .h-style.splash3.splashwhite {
   background-image: url("images/splash3-white.svg");
+}
+
+.h-style.splash3.splashred {
+  background-image: url("images/splash3-red.svg");
+}
+
+.h-style.splash3.splashred h2 {
+  color: #FFF;
 }
 
 a {
@@ -872,5 +902,42 @@ div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper {
 div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper:hover {
   -webkit-filter: grayscale(10%);
           filter: grayscale(10%);
+}
+
+#page {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .riphero {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 440px) {
+  .nav-bg .logo img, img.herologo {
+    max-width: 120px;
+  }
+  .hero-right h2 {
+    font-size: 1.3em;
+  }
+  .hero-right div {
+    margin: 5px 0 50px 0;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .h-style {
+    margin: 10px 0 20px 5px;
+    height: 100px;
+  }
+  #kde-kapitan-pomaha .h-style {
+    padding-right: 60px;
+  }
+  #kde-kapitan-pomaha .h-style h2 {
+    margin-top: -30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
