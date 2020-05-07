@@ -114,6 +114,7 @@ h6 {
 #kde-kapitan-pomaha .h-style {
   height: 170px;
   padding-right: 80px;
+  margin-left: 80px;
 }
 
 #kde-kapitan-pomaha .h-style h2 {
@@ -541,7 +542,7 @@ div.platformy img {
   color: white;
 }
 
-.nav-item {
+.nav-item, .btn {
   display: block;
   background-color: #eaba23;
   width: max-content;
@@ -554,8 +555,29 @@ div.platformy img {
   transform: skew(-12deg, 0deg);
 }
 
-.nav-item:hover {
+.nav-item:hover, .btn:hover {
   background-color: #141414;
+}
+
+.btn {
+  color: black;
+  border: unset;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.form-control {
+  border-radius: 0;
+  -webkit-transform: skew(-12deg, 0deg);
+  transform: skew(-12deg, 0deg);
+}
+
+.form-control:focus {
+  border-color: #000;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(234, 186, 35, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(234, 186, 35, 0.25);
 }
 
 .herobg {
@@ -943,9 +965,16 @@ div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper:hover {
   }
   #kde-kapitan-pomaha .h-style {
     padding-right: 60px;
+    margin-left: 60px;
   }
   #kde-kapitan-pomaha .h-style h2 {
     margin-top: -30px;
   }
+}
+
+#kde-kapitan-pomaha {
+  background: #eaba23 url(images/bg.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
