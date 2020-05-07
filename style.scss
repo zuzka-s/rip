@@ -332,11 +332,10 @@ div.platformy img {
     width: -moz-max-content;
     width: -webkit-max-content;
     width: -o-max-content;
-    margin: 0 auto  0 5px;
+    margin: 5px auto  5px 5px;
     padding: 0px 25px;
     -webkit-transform: skew(-12deg, 0deg);
     transform: skew(-12deg, 0deg);
-
 }
 .nav-item:hover {
     background-color: #141414;
@@ -532,9 +531,9 @@ div.platformy img {
 	width: 60px;
 }
 
-.malltv-carousel-container .scroll-right {
+/*.malltv-carousel-container .scroll-right {
 	display: none;
-}
+}*/
 
 .malltv-carousel-container .scroll-left:hover,
 .malltv-carousel-container .scroll-right:hover {
@@ -662,4 +661,17 @@ a.malltv-carousel-vid-channel {
 
 a.malltv-carousel-vid-channel:hover {
 	color: #800000;
+}
+
+#mtv-kapitan-rip {
+    .malltv-carousel-vidboxes-container h3 {
+        -webkit-line-clamp: unset;        
+    }
+}
+
+div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper{
+    filter: grayscale(100%);
+}
+div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper:hover{
+    filter: grayscale(10%);
 }

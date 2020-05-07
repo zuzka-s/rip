@@ -1,25 +1,3 @@
-/*const videoiframeWrapper = document.querySelector("#videoiframe");
-const videoiframe = videoiframeWrapper.querySelectorAll(".overlay")[0];
-const videoiframeClose = videoiframeWrapper.querySelectorAll(".close")[0];
-
-const openVideoIframe = function () {
-    let videoURL = this.getAttribute("data-video");
-    videoiframe.src = videoURL;
-    videoiframeWrapper.classList.add('video-on');
-};
-
-videoiframeClose.addEventListener('click', function () {
-    videoiframeWrapper.classList.remove('video-on');
-    videoiframe.src = '';
-}, false);
-
-let videoBoxes = document.querySelectorAll('.video-click');
-videoBoxes.forEach(function(videoBox) {
-    let videoURL = videoBox.getAttribute('data-video');
-    videoBox.addEventListener('click', openVideoIframe, false);
-}
-);*/
-
 function launchCarousel(id) {
     const scrollRightBtn = document.querySelector(id + " .scroll-right");
     const scrollLeftBtn = document.querySelector(id + " .scroll-left");
@@ -102,4 +80,4 @@ function launchCarousel(id) {
     });
 
 }
-launchCarousel('#mtv-denikpredatora');
+launchCarousel('#mtv-kapitan-rip');
