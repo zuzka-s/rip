@@ -185,7 +185,7 @@ a {
     transform: skew(-9deg, 0deg);
     position: absolute;
     top: 8%;
-    left: 48%;
+    left: 44%;
     h3 {
         color: $accent3; 
     }
@@ -195,7 +195,7 @@ a {
     top: 2%; 
 }
 .characters-flex-text.text5 {
-    top: 52%; 
+    top: 39%; 
 }
 
 
@@ -442,11 +442,35 @@ div.platformy img {
 }
 #kde-kapitan-pomaha {
    background-color: $accent1; 
-
-   h2 {
-       color: #FFF;
-   }
+   .help-flex-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
+
+.help-item {
+    background-color: $accent2;
+    color: #fff;
+    width: 23%;
+    padding: 1% ;
+    margin: 0 1% 1%;
+    transform: skew(-9deg, 0deg);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size:  1.2em;
+    opacity: 0.8;
+}
+
+.help-more-text {
+    color: $accent3;
+    font-size: 1.8rem;
+    text-align: left;
+    padding-top: 3%;
+}
+}
+
 #partneri {
     background-color: black;
 }

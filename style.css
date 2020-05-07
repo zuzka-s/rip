@@ -215,7 +215,7 @@ a {
           transform: skew(-9deg, 0deg);
   position: absolute;
   top: 8%;
-  left: 48%;
+  left: 44%;
 }
 
 .characters-flex-text h3 {
@@ -227,7 +227,7 @@ a {
 }
 
 .characters-flex-text.text5 {
-  top: 52%;
+  top: 39%;
 }
 
 /* Embed */
@@ -628,8 +628,42 @@ div.platformy img {
   background-color: #eaba23;
 }
 
-#kde-kapitan-pomaha h2 {
-  color: #FFF;
+#kde-kapitan-pomaha .help-flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#kde-kapitan-pomaha .help-item {
+  background-color: #950000;
+  color: #fff;
+  width: 23%;
+  padding: 1%;
+  margin: 0 1% 1%;
+  -webkit-transform: skew(-9deg, 0deg);
+          transform: skew(-9deg, 0deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+#kde-kapitan-pomaha .help-more-text {
+  color: #000000;
+  font-size: 1.8rem;
+  text-align: left;
+  padding-top: 3%;
 }
 
 #partneri {
