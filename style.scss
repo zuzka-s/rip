@@ -61,8 +61,8 @@ h6 {
     color: $accent3;
     font-family: acumin-pro, sans-serif;
     font-weight: 700;
-
 }
+
 
 .h-style h2 {
     line-height: 1;
@@ -167,6 +167,8 @@ a {
     position: relative;
 }
 
+
+
 .characters-flex {
     width: 36%;
     display: flex;
@@ -197,6 +199,47 @@ a {
 .characters-flex-text.text5 {
     top: 24%; 
 }
+
+@media screen and (max-width: 1200px) {
+    .characters-flex {
+        width: 25%;
+    }
+    .characters-flex-text {
+        left: 24%;
+        font-size: 1rem;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .characters-flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .characters-flex {
+        width: 100%;
+    }
+    .characters-flex img {
+        width: 100%;
+        max-width: 280px;
+    }
+    .characters-flex-text {
+        position: relative;
+        width: 100%;
+        top: unset;
+        left: unset;
+        margin-top: -10%;
+    }
+    }
+
+    @media screen and (max-width: 580px) {
+    .characters-flex-text {
+        transform: skew(0deg, 0deg);
+        padding: 10px;
+    }
+}
+
+
 
 
 
@@ -477,6 +520,22 @@ div.platformy img {
     font-size: 1.8rem;
     text-align: left;
     padding-top: 3%;
+}
+}
+
+@media screen and (max-width: 800px) {
+#kde-kapitan-pomaha .help-item {
+    width: 45%;
+    font-size: 1em;
+}
+}
+@media screen and (max-width: 500px) {
+    #kde-kapitan-pomaha .help-item {
+        width: 90%;
+        padding: 3px 10px;
+    }
+    #kde-kapitan-pomaha .help-more-text {
+        font-size: 1.4rem;
 }
 }
 
@@ -781,6 +840,11 @@ div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper:hover{
         display: block;
     }
 }
+@media (max-width: 800px) {
+#kde-kapitan-pomaha h2 {
+    font-size: 1.7rem;
+}
+}
 @media (max-width: 440px) {
     .nav-bg .logo img, img.herologo {
         max-width: 120px;
@@ -792,7 +856,7 @@ div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper:hover{
         margin: 5px 0 50px 0;
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .h-style {
     margin: 10px 0 20px 5px;
@@ -800,11 +864,12 @@ div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper:hover{
     } 
     #kde-kapitan-pomaha .h-style {
     padding-right: 60px;
-    margin-left: 60px;
-} 
-#kde-kapitan-pomaha .h-style h2 {
-    margin-top: -30px;
-}  
+    margin-left: 0px;
+    } 
+    #kde-kapitan-pomaha .h-style h2 {
+        margin-top: -30px;
+        font-size: 1.4rem;
+    }  
 }
 #kde-kapitan-pomaha {
     background: $accent1 url(images/bg.png) no-repeat;
