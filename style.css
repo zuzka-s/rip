@@ -565,7 +565,19 @@ div.platformy img {
   border-radius: 0;
   padding: 10px 20px;
   font-weight: bold;
-  margin: 0 auto;
+  margin: unset;
+  margin-left: auto;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #000;
+  border-color: #000;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  border-color: #000;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(234, 186, 35, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(234, 186, 35, 0.25);
 }
 
 .form-control {
