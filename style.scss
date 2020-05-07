@@ -43,7 +43,7 @@ html {
 }
 
 body {
-    font-family: acumin-pro, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
 
@@ -65,6 +65,10 @@ h6 {
 
 .h-style h2 {
     line-height: 1;
+}
+
+.small-text {
+    font-size: 0.8em;
 }
 
 /*.h-style {
@@ -128,12 +132,13 @@ a {
 }
 
 .characters-flex-container {
-    display: flex;
+    display: block;
     width: 100%;
     margin: 0 auto 3%;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .characters-flex {
@@ -147,6 +152,19 @@ a {
 
 .characters-flex img{
     width: 100%;
+}
+
+.characters-flex-text {
+    background-color: $accent1;
+    color: $accent3;
+    padding: 3%;
+    transform: skew(-9deg, 0deg);
+    position: absolute;
+    top: 8%;
+    left: 48%;
+    h3 {
+        color: $accent3; 
+    }
 }
 
 
@@ -373,9 +391,6 @@ div.platformy img {
    background-color: $accent3;
     color: white; 
 
-    h3 {
-        color: white;
-    }
 }
 #kde-kapitan-pomaha {
    background-color: $accent1; 

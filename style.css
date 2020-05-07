@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  font-family: acumin-pro, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -57,6 +57,10 @@ h6 {
 
 .h-style h2 {
   line-height: 1;
+}
+
+.small-text {
+  font-size: 0.8em;
 }
 
 /*.h-style {
@@ -135,9 +139,7 @@ a {
 }
 
 .characters-flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   width: 100%;
   margin: 0 auto 3%;
   -webkit-box-orient: horizontal;
@@ -149,6 +151,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .characters-flex {
@@ -171,6 +174,21 @@ a {
 
 .characters-flex img {
   width: 100%;
+}
+
+.characters-flex-text {
+  background-color: #eaba23;
+  color: #000000;
+  padding: 3%;
+  -webkit-transform: skew(-9deg, 0deg);
+          transform: skew(-9deg, 0deg);
+  position: absolute;
+  top: 8%;
+  left: 48%;
+}
+
+.characters-flex-text h3 {
+  color: #000000;
 }
 
 /* Embed */
@@ -543,10 +561,6 @@ div.platformy img {
 
 #hlavni-postavy {
   background-color: #000000;
-  color: white;
-}
-
-#hlavni-postavy h3 {
   color: white;
 }
 
