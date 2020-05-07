@@ -109,6 +109,7 @@ h6 {
 
 #hlavni-postavy .h-style {
   padding-right: 60px;
+  margin: 10px 0 0px 5px;
 }
 
 #kde-kapitan-pomaha .h-style {
@@ -172,7 +173,7 @@ a {
 .characters-flex-container {
   display: block;
   width: 100%;
-  margin: 0 auto 3%;
+  margin: 0 auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -186,7 +187,7 @@ a {
 }
 
 .characters-flex {
-  width: 50%;
+  width: 36%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,24 +211,20 @@ a {
 .characters-flex-text {
   background-color: #eaba23;
   color: #000000;
-  padding: 3%;
+  padding: 2%;
   -webkit-transform: skew(-9deg, 0deg);
           transform: skew(-9deg, 0deg);
   position: absolute;
   top: 8%;
-  left: 44%;
+  left: 36%;
 }
 
 .characters-flex-text h3 {
   color: #000000;
 }
 
-.characters-flex-text.text3 {
-  top: 2%;
-}
-
 .characters-flex-text.text5 {
-  top: 39%;
+  top: 24%;
 }
 
 /* Embed */
