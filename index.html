@@ -338,18 +338,24 @@
                 <div class="h-style">
                     <h2>Řípoměr</h2>
                 </div>
-                    <div class="text-center">
+                <div class="row">
+                    <div class="col-12 col-md-6 px-4">
                         <p>Poraďte Kapitánovi, na jakou misi se má vydat příště!</p>
                         <p><strong>Co má udělat pro náš národ? Koho má zničit, zabít, znemožnit, pomočit?</strong></p>
                         <p>Osud Česka máte ve svých rukou. A svěřujete ho do Kapitánových nemožně velkých tlapek.</p>
                     </div>
-<form class="my-5">
-<div class="form-group">
-    <label for="exampleFormControlTextarea1"><strong>Kapitánovi radím, aby:</strong></label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-    <button type="submit" class="btn btn-primary">Poslat Kapitánovi</button>
-</form>
+                    <div class="col-12 col-md-6 my-5 my-md-0">
+                        <form>
+                        <div class="form-group">
+                            <label for="message"><strong>Kapitánovi radím, aby:</strong></label>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                            <input type="email" class="email" id="email" name="email">
+                        </div>
+                            <button type="submit" class="btn btn-primary">Poslat Kapitánovi</button>
+                        </form>
+                        <div id="form-result"></div>
+                    </div>
+                </div>
             </div>
         
         </div>
@@ -363,7 +369,7 @@
                     <a href="https://www.mall.tv/kapitan-rip" target="_blank" class="partner-box"><img
                             src="images/partneri/malltv.png" alt="MALL.TV"></a>
                     <a href="https://www.cncenter.cz" target="_blank" class="partner-box"><img
-                                src="images/partneri/cnc.png" alt="MALL.TV"></a>
+                                src="images/partneri/cnc.png" alt="CNC"></a>
 
                 </div>
             </div>
@@ -419,6 +425,26 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
         <script type="text/javascript" src="malltvcarousel.js"></script>
+        <script>
+            var emailInput = document.querySelector("input.email");
+                emailInput.style = "display: none;";
+            var formResult = document.querySelector("#form-result");    
+            function saveMessage(message, email) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            console.log("X", this.responseText);
+                            if (this.responseText !== "") {
+                                formResult.innerHTML = "Podnět úspěšně odeslán!";
+                            }
+                        }
+                    }
+                    xhttp.open("POST", "post_message.php", true);
+                    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    xhttp.send("message=" + message + "&email=" + email);
+           } 
+    
+        </script>
 </body>
 
 </html>
