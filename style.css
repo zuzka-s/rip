@@ -1129,6 +1129,10 @@ div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper:hover {
   max-width: 150px;
 }
 
+.partner-box.cnc img {
+  width: 60%;
+}
+
 .partner-box:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
