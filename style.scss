@@ -206,8 +206,15 @@ a {
     }
     .characters-flex-text {
         left: 24%;
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 1%;
+        h3 {
+        font-size: 1.6rem;
+        }
+    
+    }
+    .characters-flex-container {
+        margin: 4% auto;
     }
 }
 
@@ -326,13 +333,13 @@ div.mobil {
 
 @media screen and (max-width: 1199px) {
 div.mobil {
-    margin-bottom: -66px;
+    margin-bottom: -104px;
 }
 }
 
 @media screen and (max-width: 991.5px) {
     div.mobil {
-        margin-bottom: -92px;
+        margin-bottom: -132px;
     }
 }
 
@@ -866,4 +873,26 @@ div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper:hover{
     background: $accent1 url(images/bg.png) no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+/* ------------- partneri -----------------*/
+.partners-boxes {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 25px;
+    flex-wrap: wrap;
+ .partner-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 12px;
+    width: fit-content;
+    img {
+        max-width: 150px;
+    }
+}
+}
+
+.partner-box:hover {
+    transform: scale(1.05);
 }
