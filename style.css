@@ -232,8 +232,14 @@ a {
   }
   .characters-flex-text {
     left: 24%;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 1%;
+  }
+  .characters-flex-text h3 {
+    font-size: 1.6rem;
+  }
+  .characters-flex-container {
+    margin: 4% auto;
   }
 }
 
@@ -479,13 +485,13 @@ div.mobil {
 
 @media screen and (max-width: 1199px) {
   div.mobil {
-    margin-bottom: -66px;
+    margin-bottom: -104px;
   }
 }
 
 @media screen and (max-width: 991.5px) {
   div.mobil {
-    margin-bottom: -92px;
+    margin-bottom: -132px;
   }
 }
 
@@ -1087,6 +1093,48 @@ div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper:hover {
   background: #eaba23 url(images/bg2.jpg) no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+/* ------------- partneri -----------------*/
+.partners-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.partners-boxes .partner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 12px 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.partners-boxes .partner-box img {
+  max-width: 150px;
+}
+
+.partner-box.cnc img {
+  width: 60%;
+}
+
+.partner-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 input.email {
