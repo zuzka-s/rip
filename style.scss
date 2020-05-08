@@ -107,8 +107,7 @@ h6 {
     }
 }
 #hlavni-postavy .h-style {
-    padding-right: 60px;
-    margin: 10px 0 0px 5px;
+    background: none;
 
 }
 #kde-kapitan-pomaha .h-style {
@@ -445,7 +444,7 @@ div.platformy img {
     background-color: #000;
     border-color: #000;
 }
-.btn-primary:not(:disabled):not(.disabled):active {
+.btn-primary.focus, .btn-primary:focus,.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
      border-color: #000;
     box-shadow: 0 0 0 0.2rem rgba(234,186,35,.25);   
 }
@@ -459,7 +458,7 @@ div.platformy img {
     box-shadow: 0 0 0 0.2rem rgba(234,186,35,.25);
 }  
 .herobg {
-    background: $accent1 url(images/bg.png) no-repeat;
+    background: $accent1 url(images/bg.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
 }
@@ -855,7 +854,7 @@ div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper:hover{
     .hero-right div {
         margin: 5px 0 50px 0;
     }
-    h2 {
+    h2, h3 {
         font-size: 1.4rem;
     }
     .h-style {
@@ -872,7 +871,7 @@ div.ng-isolate-scope.video-click.malltv-carousel-vid-box-wrapper:hover{
     }  
 }
 #kde-kapitan-pomaha {
-    background: $accent1 url(images/bg.png) no-repeat;
+    background: $accent1 url(images/bg2.jpg) no-repeat;
     background-position: center center;
     background-size: cover;
 }

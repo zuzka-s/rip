@@ -330,7 +330,7 @@
                                         <div class="help-item">Se zřizováním nových kojeneckých ústavů.</div>
                                         <div class="help-item">S náborem pracovní síly do českých montoven.</div>
                                 </div>
-                                    <h2 class="help-more-text italic">Zkrátka všude, kde jej český národ nutně potřebuje!</h2>
+                                    <h2 class="help-more-text italic text-center">Zkrátka všude, kde jej český národ nutně potřebuje!</h2>
             </div>
         </div>
         <div id="ripomer" class="py-3 py-md-5">
@@ -344,14 +344,14 @@
                         <p><strong>Co má udělat pro náš národ? Koho má zničit, zabít, znemožnit, pomočit?</strong></p>
                         <p>Osud Česka máte ve svých rukou. A svěřujete ho do Kapitánových nemožně velkých tlapek.</p>
                     </div>
-                    <div class="col-12 col-md-6 my-5 my-md-0">
+                    <div class="col-12 col-md-6 my-5 my-md-0 px-4">
                         <form>
                         <div class="form-group">
                             <label for="message"><strong>Kapitánovi radím, aby:</strong></label>
-                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
                             <input type="email" class="email" id="email" name="email">
                         </div>
-                            <button type="submit" class="btn btn-primary">Poslat Kapitánovi</button>
+                            <button type="submit" id="submit" class="btn btn-primary">Poslat Kapitánovi</button>
                         </form>
                         <div id="form-result"></div>
                     </div>
@@ -427,16 +427,29 @@
         <script type="text/javascript" src="malltvcarousel.js"></script>
         <script>
             var emailInput = document.querySelector("input.email");
-                emailInput.style = "display: none;";
-            var formResult = document.querySelector("#form-result");    
+                emailInput.style = "display: none;";    
+            var formResult = document.querySelector("#form-result");
+            
+            document.querySelector("#submit").addEventListener("click", function (event) {
+                    console.log("click");
+                    event.preventDefault();
+                    var emailInput = document.querySelector("input#email").value;
+                    var messageInput = document.querySelector("textarea#message").value;
+                    saveMessage(messageInput, emailInput)
+            });
             function saveMessage(message, email) {
+                console.log(message, "message");
+                console.log(email, "email");
                     var xhttp = new XMLHttpRequest();
                     xhttp.onreadystatechange = function () {
                         if (this.readyState == 4 && this.status == 200) {
-                            console.log("X", this.responseText);
-                            if (this.responseText !== "") {
-                                formResult.innerHTML = "Podnět úspěšně odeslán!";
+                            if(this.responseText=="1") {    
+                                formResult.innerHTML = '<div class="success">Podnět úspěšně odeslán!</div>';
+                            } else {
+                                formResult.innerHTML = '<div class="nosuccess">Podnět nebyl odeslán!</div>';    
                             }
+                            document.querySelector("input#email").value = "";
+                            document.querySelector("textarea#message").value ="";
                         }
                     }
                     xhttp.open("POST", "post_message.php", true);
